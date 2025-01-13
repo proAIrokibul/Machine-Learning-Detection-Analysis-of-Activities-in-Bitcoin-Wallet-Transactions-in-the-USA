@@ -45,6 +45,6 @@ Implemented three classification algorithms to detect suspicious wallet activiti
        0       0.80      1.00      0.89      2044
        1       1.00      0.00      0.00       503
        
-accuracy                           0.80      2547
-macro avg       0.90      0.50     0.45      2547
-weighted avg    0.84      0.80     0.72      2547
+    accuracy                           0.80      2547
+    macro avg       0.90      0.50     0.45      2547
+    weighted avg    0.84      0.80     0.72      2547

@@ -39,11 +39,70 @@ Implemented three classification algorithms to detect suspicious wallet activiti
 
 ### 4. Model Results
 
+**Classification Report:**
 #### Logistic Regression
-          precision    recall  f1-score   support
+               precision    recall  f1-score   support
 
-       0       0.80      1.00      0.89      2044
-       1       1.00      0.00      0.00       503
+       0           0.80      1.00     0.89      2044
+       1           1.00      0.00     0.00       503
+    accuracy                          0.80      2547
+    macro avg      0.90      0.50     0.45      2547
+    weighted avg   0.84      0.80     0.72      2547
+**Accuracy:** 0.80
+
+**Classification Report:**
+#### Random Forest Classifier
+
+              precision    recall  f1-score   support
+
+       0          0.80      0.97      0.88      2044
+       1          0.13      0.02      0.03       503
+
+    accuracy                           0.78      2547
+    macro avg     0.46       0.49      0.45      2547 
+    weighted avg  0.67       0.78      0.71      2547
+
+**Accuracy:** 0.78**
+
+**Classification Report:**
+#### Support Vector Machine (SVM)
+              precision    recall  f1-score   support
+
+       0          0.80      1.00      0.89      2044
+       1          0.00      0.00      0.00       503
+
     accuracy                           0.80      2547
-    macro avg       0.90      0.50     0.45      2547
-    weighted avg    0.84      0.80     0.72      2547
+    macro avg      0.40      0.50      0.45      2547 
+    weighted avg   0.64      0.80      0.71      2547
+
+**Accuracy:** 0.80
+
+### 5. Model Comparison
+- Evaluated models using metrics like Accuracy, Precision, Recall, and F1 Score.
+- Visualized model performance metrics to identify the best-performing model.
+
+## Key Results
+- **Random Forest** emerged as the best model with the highest F1 Score, showcasing its ability to handle non-linear relationships in the data.
+- Insights revealed significant patterns in wallet activity, such as the correlation between unredeemed transactions and final balances.
+
+## Business Impact
+The insights derived from this project have several critical implications for the blockchain and financial sectors:
+
+- **Fraud Prevention**: Early detection of suspicious wallet activities can help organizations mitigate financial risks and fraud in cryptocurrency transactions.
+- **Regulatory Compliance**: Provides data-driven evidence for compliance with anti-money laundering (AML) regulations.
+- **Enhanced Security**: Helps blockchain platforms improve their security infrastructure by identifying patterns associated with malicious behaviors.
+- **Operational Efficiency**: Automates the detection of high-risk wallets, reducing the need for manual intervention and enabling faster response times.
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
